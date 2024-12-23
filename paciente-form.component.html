@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <div class="form-container">
+    <h2>{{ isEditMode ? 'Editar Paciente' : 'Adicionar Paciente' }}</h2>
+
+    <form [formGroup]="pacienteForm" (ngSubmit)="savePaciente()">
+      <!-- Campo Nome -->
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" formControlName="nome" class="form-control" />
+        <div *ngIf="pacienteForm.get('nome')?.invalid && pacienteForm.get('nome')?.touched" class="text-danger">
+          O nome é obrigatório.
+        </div>
+      </div>
+
+      <!-- Campo Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" class="form-control" />
+        <div *ngIf="pacienteForm.get('email')?.invalid && pacienteForm.get('email')?.touched" class="text-danger">
+          Insira um email válido.
+        </div>
+      </div>
+
+      <!-- Campo Telefone -->
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input id="telefone" type="text" formControlName="telefone" class="form-control" />
+        <div *ngIf="pacienteForm.get('telefone')?.invalid && pacienteForm.get('telefone')?.touched" class="text-danger">
+          O telefone é obrigatório.
+        </div>
+      </div>
+
+      <!-- Botões Salvar e Cancelar -->
+      <div class="button-group">
+        <button type="submit" class="btn save-button" [disabled]="pacienteForm.invalid">
+          {{ isEditMode ? 'Atualizar' : 'Salvar' }}
+        </button>
+        <button type="button" class="btn cancel-button" (click)="cancel()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

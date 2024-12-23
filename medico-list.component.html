@@ -1,0 +1,37 @@
+<div class="container medico-list">
+  <h2>Lista de Médicos</h2>
+
+  <!-- Botões de ação -->
+  <div class="action-buttons">
+    <button class="add-button" (click)="navigateToAddMedico()">Adicionar Médico</button>
+    <button class="back-button" (click)="navigateToPacientes()">Voltar para Cadastro de Pacientes</button>
+  </div>
+
+  <!-- Verifica se há médicos para exibir -->
+  <div *ngIf="medicos && medicos.length > 0; else noMedicos">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Especialidade</th>
+        <th>Ações</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let medico of medicos">
+        <td>{{ medico.nome }}</td>
+        <td>{{ medico.especialidade }}</td>
+        <td class="button-group">
+          <button class="edit-button" (click)="editMedico(medico.id)">Editar</button>
+          <button class="delete-button" (click)="deleteMedico(medico.id)">Excluir</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mensagem caso não haja médicos cadastrados -->
+  <ng-template #noMedicos>
+    <p class="no-data">Nenhum médico encontrado.</p>
+  </ng-template>
+</div>

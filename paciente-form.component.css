@@ -1,0 +1,121 @@
+/* Define o fundo da página como preto e centraliza o conteúdo */
+body, html {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Cor do texto fora do formulário em branco para contraste */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garante que o body ocupe a altura total */
+}
+
+/* Wrapper para centralizar o formulário */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contêiner do formulário */
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo claro para o formulário */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333; /* Cor do texto dentro do formulário */
+}
+
+/* Título do formulário */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilo para os grupos de formulário */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Campos de entrada */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+  background-color: #fff;
+  color: #333;
+  margin: 0; /* Remove margens extras que podem estar afetando o alinhamento */
+}
+
+
+/* Mensagens de erro */
+.text-danger {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Grupo de botões para salvar e cancelar */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Botões Salvar e Cancelar */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+  font-weight: bold;
+}
+
+/* Botão Salvar */
+.save-button {
+  background-color: #4CAF50; /* Verde para salvar */
+}
+
+.save-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+/* Botão Cancelar */
+.cancel-button {
+  background-color: #f44336; /* Vermelho para cancelar */
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}

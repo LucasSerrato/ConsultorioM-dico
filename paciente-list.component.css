@@ -1,0 +1,197 @@
+/* Define o fundo da página como preto */
+body {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Cor do texto fora da tabela em branco para melhor contraste */
+  font-family: Arial, sans-serif; /* Definindo uma fonte padrão */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo claro para o conteúdo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333; /* Cor do texto dentro do container */
+}
+
+/* Seção de cabeçalho para botões */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilos para os botões de cabeçalho */
+.add-button, .logout-button, .medico-button, .view-medicos-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+/* Botão "Adicionar Paciente" */
+.add-button {
+  background-color: #4CAF50;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Botão "Sair" */
+.logout-button {
+  background-color: #f44336;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Botão "Cadastrar Médico" */
+.medico-button {
+  background-color: #ff9800; /* Cor laranja para o botão de cadastrar médico */
+}
+
+.medico-button:hover {
+  background-color: #e68900; /* Cor laranja mais escura ao passar o mouse */
+}
+
+/* Botão "Ver Médicos" */
+.view-medicos-button {
+  background-color: #17a2b8; /* Azul claro */
+}
+
+.view-medicos-button:hover {
+  background-color: #138496; /* Azul mais escuro ao passar o mouse */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+  transition: background-color 0.15s ease-in-out;
+}
+
+/* Grupo de botões de ação em cada linha */
+.button-group {
+  display: flex;
+  gap: 10px; /* Espaço entre os botões */
+  justify-content: center; /* Alinha os botões ao centro */
+}
+
+.edit-button, .delete-button, .schedule-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.edit-button {
+  background-color: #2196F3;
+}
+
+.edit-button:hover {
+  background-color: #0b7dda;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.schedule-button {
+  background-color: #4CAF50; /* Verde para o botão de agendamento */
+}
+
+.schedule-button:hover {
+  background-color: #45a049; /* Cor verde mais escura ao passar o mouse */
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .add-button, .logout-button, .medico-button, .view-medicos-button, .edit-button, .delete-button, .schedule-button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+}
+
+/* Certifique-se de que o contêiner principal esteja bem configurado */
+.container {
+  max-width: 1200px; /* Defina um limite máximo de largura */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  padding: 0 15px; /* Adiciona espaçamento interno */
+}
+
+/* Ajuste a tabela para caber no layout */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove os espaços entre bordas */
+}
+
+th, td {
+  text-align: center; /* Centraliza o texto */
+  word-wrap: break-word; /* Permite que o texto seja quebrado */
+}
+
+/* Garanta que o corpo da página não tenha scroll horizontal */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

@@ -1,0 +1,47 @@
+<div class="container">
+  <h2>Lista de Pacientes</h2>
+
+  <!-- Div para botões de cabeçalho -->
+  <div class="header-buttons">
+    <button class="add-button" (click)="navigateToAddPaciente()">Adicionar Paciente</button>
+    <button class="medico-button" (click)="navigateToAddMedico()">Cadastrar Médico</button>
+    <button class="view-medicos-button" (click)="navigateToMedicoList()">Ver Médicos</button>
+    <button class="logout-button" (click)="logout()">Sair</button>
+  </div>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>Data da Consulta</th>
+      <th>Hora da Consulta</th>
+      <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let paciente of pacientes">
+      <td>{{ paciente.id }}</td>
+      <td>{{ paciente.nome }}</td>
+      <td>{{ paciente.email }}</td>
+      <td>{{ paciente.telefone }}</td>
+      <td>{{ paciente.dataUltimoAgendamento || 'Sem consulta' }}</td>
+      <td>{{ paciente.horaUltimoAgendamento || 'Sem consulta' }}</td>
+      <td>
+        <div class="button-group">
+          <button class="edit-button" (click)="editPaciente(paciente.id)">Editar</button>
+          <button class="delete-button" (click)="deletePaciente(paciente.id)">Remover</button>
+          <button class="schedule-button" (click)="navigateToSchedule(paciente.id)">Agendar Consulta</button>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Exibir mensagem caso não haja pacientes -->
+  <div *ngIf="pacientes.length === 0" class="no-data">
+    Nenhum paciente encontrado.
+  </div>
+</div>

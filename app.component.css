@@ -1,0 +1,18 @@
+/* Define a altura mínima da tela para o layout */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9; /* ou a cor de fundo que preferir */
+  color: #333;
+  font-size: 14px;
+}

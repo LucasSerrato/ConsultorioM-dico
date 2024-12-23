@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Agendar Consulta para Paciente {{ pacienteId }}</h2>
+  <form [formGroup]="agendamentoForm" (ngSubmit)="agendarConsulta()">
+    <div class="form-group">
+      <label for="data">Data:</label>
+      <input id="data" formControlName="data" type="date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="hora">Hora:</label>
+      <input id="hora" formControlName="hora" type="time" required>
+    </div>
+
+    <div class="form-group">
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" formControlName="observacoes" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="schedule-button">Agendar Consulta</button>
+  </form>
+</div>

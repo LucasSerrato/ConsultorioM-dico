@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Cadastrar Médico</h2>
+  <form [formGroup]="medicoForm" (ngSubmit)="salvarMedico()">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input id="nome" formControlName="nome" type="text" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="especialidade">Especialidade</label>
+      <input id="especialidade" formControlName="especialidade" type="text" class="form-control" />
+    </div>
+
+    <div class="button-group">
+      <button type="submit" [disabled]="medicoForm.invalid" class="save-button">Salvar</button>
+      <button type="button" (click)="cancelar()" class="cancel-button">Cancelar</button>
+    </div>
+  </form>
+</div>
