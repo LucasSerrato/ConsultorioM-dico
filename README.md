@@ -52,12 +52,6 @@ Sample data: Can be initialized using data.sql or CommandLineRunner.
 ---
 
 
-# How to Run the Project Locally
-1. Clone the Repository
-2. Run Back-End: ./mvnw spring-boot:run
-3. Run Front-End: npm install && ng serve
----
-
 ## 🚀 Future Improvements
 - Doctor and Patient registration
 - Appointment scheduling with doctor, date, time, and specialty
