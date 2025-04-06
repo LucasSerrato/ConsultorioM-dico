@@ -35,34 +35,9 @@ Consultório Médico is a full-stack web application designed to facilitate the 
 
 ---
 
-Consultorio-Medico/
-│
-├── backend/
-│   ├── src/main/java/com/consultorio/
-│   │   ├── ConsultorioApplication.java          # Entry point of the Spring Boot app
-│   │   ├── controller/
-│   │   │   ├── MedicoController.java            # Doctor-related endpoints
-│   │   │   ├── PacienteController.java          # Patient-related endpoints
-│   │   │   └── AgendamentoController.java       # Appointment-related endpoints
-│   │   ├── model/
-│   │   │   ├── Medico.java                      # Doctor entity
-│   │   │   ├── Paciente.java                    # Patient entity
-│   │   │   └── Agendamento.java                 # Appointment entity
-│   │   └── repository/
-│   │       ├── MedicoRepository.java
-│   │       ├── PacienteRepository.java
-│   │       └── AgendamentoRepository.java
-│
-└── frontend/
-    ├── src/app/
-    │   ├── app.module.ts                        # Angular root module
-    │   ├── app.component.ts/html/css            # Main app component
-    │   ├── agendamento-consulta/
-    │   │   ├── agendamento-consulta.component.ts/html/css
-    │   │   └── agendamento.service.ts           # Service for API communication
-
 
 ## 🔐 Security & Validation
+
 DTOs: Data Transfer Objects used to decouple data sent to and from the API.
 
 Validation: Backend uses @Valid annotations to ensure input correctness.
