@@ -49,15 +49,22 @@ H2 Console: Available at http://localhost:8080/h2-console for quick DB inspectio
 
 Sample data: Can be initialized using data.sql or CommandLineRunner.
 
-## 🚀 Future Improvements
-✅ Authentication and role-based access (Admin / Doctor / Patient).
+## 🚀Future improvements
+✅ Authentication and role-based access (Admin/Doctor/Patient).
 
-✅ Pagination and search for doctor listings.
+✅ Pagination and search of doctor lists.
 
-✅ Switchable production database (e.g., PostgreSQL).
+✅ Switchable production database (e.g. PostgreSQL).
 
 ✅ Email/SMS notifications for appointments.
 
+✅ Doctor and patient registration
+✅ Appointment scheduling with doctor, details, time and specialty
+✅ Full integration between frontend and backend
+
+✅ Authentication and authorization (JWT/Spring Security)
+✅ Medical history and PDF reports
+✅ Notifications and true database integration
 
 
 ## ▶️ How to Run the Project Locally
