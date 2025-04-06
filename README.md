@@ -34,23 +34,29 @@ The system streamlines the appointment scheduling process by providing functiona
 
 ---
 
-## 📂 **Estrutura do Projeto**
+📂 Project Structure
+The repository is organized into distinct directories for back-end and front-end components:
 
-O repositório é organizado em diretórios distintos para componentes de back-end e front-end:
+Back-End:
 
-- **Back-End:**
-- `BackendApplication.java`: Classe principal para executar o aplicativo Spring Boot.
-- `Medico.java`, `Paciente.java`, `Agendamento.java`: Classes de entidade que representam médicos, pacientes e consultas.
-- `MedicoController.java`, `PacienteController.java`, `AgendamentoController.java`: Controladores que manipulam solicitações HTTP relacionadas a médicos, pacientes e consultas.
-- `MedicoRepository.java`, `PacienteRepository.java`, `AgendamentoRepository.java`: Interfaces de repositório para operações de banco de dados.
+BackendApplication.java: Main class to run the Spring Boot application.
 
-- **Front-End:**
-- `app.module.ts`: Módulo principal que define o aplicativo Angular.
-- `app.component.ts`, `app.component.html`, `app.component.css`: Componente raiz da aplicação.
-- `agendamento-consulta.component.ts`, `agendamento-consulta.component.html`, `agendamento-consulta.component.css`: Componente para agendamento de consultas.
-- `agendamento.service.ts`: Serviço que trata chamadas de API relacionadas ao agendamento de consultas.
+Medico.java, Paciente.java, Agendamento.java: Entity classes representing doctors, patients, and appointments.
 
----
+MedicoController.java, PacienteController.java, AgendamentoController.java: Controllers handling HTTP requests related to doctors, patients, and appointments.
+
+MedicoRepository.java, PacienteRepository.java, AgendamentoRepository.java: Repository interfaces for database operations.
+
+Front-End:
+
+app.module.ts: Main module defining the Angular application.
+
+app.component.ts, app.component.html, app.component.css: Root component of the application.
+
+agendamento-consulta.component.ts, agendamento-consulta.component.html, agendamento-consulta.component.css: Component for scheduling consultations.
+
+agendamento.service.ts: Service handling API calls related to appointment scheduling.
+
 
 ## ▶️ **How to Run the Project Locally**
 
@@ -147,14 +153,18 @@ O sistema otimiza o processo de agendamento de consultas, oferecendo funcionalid
 
 ## 📂 **Estrutura do Projeto**
 
-O repositório está organizado em diretórios distintos para os componentes de back-end e front-end:
+O repositório é organizado em diretórios distintos para componentes de back-end e front-end:
 
 - **Back-End:**
-  - `BackendApplication.java`: Classe principal para executar a aplicação Spring Boot.
-  - `Medico.java`, `Paciente.java`, `Agendamento.java`: Classes de entidade representando médicos, pacientes e agendamentos.
-  - `MedicoController.java`, `PacienteController.java`, `AgendamentoController.java`: Controladores que lidam com requisições HTTP relacionadas a médicos, pacientes e agendamentos.
-  - `MedicoRepository.java`, `PacienteRepository.java`, `AgendamentoRepository.java`: Interfaces de repositório para operações de banco de dados.
+- `BackendApplication.java`: Classe principal para executar o aplicativo Spring Boot.
+- `Medico.java`, `Paciente.java`, `Agendamento.java`: Classes de entidade que representam médicos, pacientes e consultas.
+- `MedicoController.java`, `PacienteController.java`, `AgendamentoController.java`: Controladores que manipulam solicitações HTTP relacionadas a médicos, pacientes e consultas.
+- `MedicoRepository.java`, `PacienteRepository.java`, `AgendamentoRepository.java`: Interfaces de repositório para operações de banco de dados.
 
 - **Front-End:**
-  - `app.module.ts`: Módulo principal que define a aplicação Angular.
-  - 
+- `app.module.ts`: Módulo principal que define o aplicativo Angular.
+- `app.component.ts`, `app.component.html`, `app.component.css`: Componente raiz da aplicação.
+- `agendamento-consulta.component.ts`, `agendamento-consulta.component.html`, `agendamento-consulta.component.css`: Componente para agendamento de consultas.
+- `agendamento.service.ts`: Serviço que trata chamadas de API relacionadas ao agendamento de consultas.
+
+---
