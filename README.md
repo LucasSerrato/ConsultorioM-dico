@@ -43,11 +43,13 @@ DTOs: Data Transfer Objects used to decouple data sent to and from the API.
 Validation: Backend uses @Valid annotations to ensure input correctness.
 
 CORS Configured: Enables front-end and back-end communication during development.
+---
 
 ## 🧪 Testing & Database
 H2 Console: Available at http://localhost:8080/h2-console for quick DB inspections.
 
 Sample data: Can be initialized using data.sql or CommandLineRunner.
+---
 
 ## 🚀Future improvements
 ✅ Authentication and role-based access (Admin/Doctor/Patient).
@@ -60,28 +62,32 @@ Sample data: Can be initialized using data.sql or CommandLineRunner.
 ✅ Authentication and authorization (JWT/Spring Security)
 ✅ Medical history and PDF reports
 ✅ Notifications and true database integration
-
+---
 
 ## ▶️ How to Run the Project Locally
 1. Clone the Repository
 2. Run Back-End: ./mvnw spring-boot:run
 3. Run Front-End: npm install && ng serve
+---
 
 ## 🚀 Future Improvements
 - Doctor and Patient registration
 - Appointment scheduling with doctor, date, time, and specialty
 - Full integration between front-end and back-end
+---
 
 ## 🚀 Possibilities for Expansion
 - Authentication and Authorization (JWT/Spring Security)
 - Medical history and PDF reports
 - Notifications and real database integration
+---
 
 ## 🤝 Contributions
 Lucas Serrato
 LinkedIn: https://www.linkedin.com/in/lucasserrato201
 Email: alfalifeclothes@gmail.com
 Donate via Pix: https://livepix.gg/lkshow
+---
 
 ## 🎓 Academic Note
 This project demonstrates the integration of Java, Spring Boot, Angular, and TypeScript to build a scalable and complete full-stack web application.
