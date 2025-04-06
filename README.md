@@ -150,16 +150,16 @@ Console H2: Disponível em http://localhost:8080/h2-console para inspeções rá
 Dados de amostra: Podem ser inicializados usando data.sql ou CommandLineRunner.
 
 ## 🚀 Melhorias futuras
-✅ Autenticação e acesso baseado em função (Administrador/Médico/Paciente).
-✅ Paginação e pesquisa de listagens de médicos.
-✅ Banco de dados de produção comutável (por exemplo, PostgreSQL).
-✅ Notificações por e-mail/SMS para consultas.
-✅ Cadastro de médicos e pacientes
-✅ Agendamento de consultas com médico, data, hora e especialidade
-✅ Integração total entre front-end e back-end
-✅ Autenticação e autorização (JWT/Spring Security)
-✅ Histórico médico e relatórios em PDF
-✅ Notificações e integração real com banco de dados
+- ✅ Autenticação e acesso baseado em função (Administrador/Médico/Paciente).
+- ✅ Paginação e pesquisa de listagens de médicos.
+- ✅ Banco de dados de produção comutável (por exemplo, PostgreSQL).
+- ✅ Notificações por e-mail/SMS para consultas.
+- ✅ Cadastro de médicos e pacientes
+- ✅ Agendamento de consultas com médico, data, hora e especialidade
+- ✅ Integração total entre front-end e back-end
+- ✅ Autenticação e autorização (JWT/Spring Security)
+- ✅ Histórico médico e relatórios em PDF
+- ✅ Notificações e integração real com banco de dados
 
 ## ▶️ Como executar o projeto localmente
 1. Clonar o repositório
