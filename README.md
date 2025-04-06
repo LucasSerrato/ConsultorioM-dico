@@ -33,6 +33,7 @@ Consultório Médico is a full-stack web application designed to facilitate the 
 
 - ✅ Bootstrap/CSS: For a responsive and clean UI design.
 
+---
 
 Consultorio-Medico/
 │
