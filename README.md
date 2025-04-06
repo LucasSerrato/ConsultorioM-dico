@@ -51,17 +51,12 @@ Sample data: Can be initialized using data.sql or CommandLineRunner.
 
 ## 🚀Future improvements
 ✅ Authentication and role-based access (Admin/Doctor/Patient).
-
 ✅ Pagination and search of doctor lists.
-
 ✅ Switchable production database (e.g. PostgreSQL).
-
 ✅ Email/SMS notifications for appointments.
-
 ✅ Doctor and patient registration
 ✅ Appointment scheduling with doctor, details, time and specialty
 ✅ Full integration between frontend and backend
-
 ✅ Authentication and authorization (JWT/Spring Security)
 ✅ Medical history and PDF reports
 ✅ Notifications and true database integration
@@ -150,19 +145,12 @@ Dados de amostra: Podem ser inicializados usando data.sql ou CommandLineRunner.
 
 ## 🚀 Melhorias futuras
 ✅ Autenticação e acesso baseado em função (Administrador/Médico/Paciente).
-
 ✅ Paginação e pesquisa de listagens de médicos.
-
 ✅ Banco de dados de produção comutável (por exemplo, PostgreSQL).
-
 ✅ Notificações por e-mail/SMS para consultas.
-
-
 ✅ Cadastro de médicos e pacientes
 ✅ Agendamento de consultas com médico, data, hora e especialidade
 ✅ Integração total entre front-end e back-end
-
-
 ✅ Autenticação e autorização (JWT/Spring Security)
 ✅ Histórico médico e relatórios em PDF
 ✅ Notificações e integração real com banco de dados
