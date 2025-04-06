@@ -1,7 +1,3 @@
-Certainly! Based on the provided information and the GitHub repository, here is a comprehensive README for the **Consultório Médico** project, presented first in English and then in Portuguese:
-
----
-
 # 🏥 **Consultório Médico – Medical Appointment Scheduling System**
 
 **Consultório Médico** is a full-stack web application designed to facilitate the scheduling of medical appointments. Developed using **Java**, **JavaScript**, **TypeScript**, **Spring Boot**, and **H2 Database**, the system allows patients to book consultations by selecting available doctors, specifying dates and times, and choosing medical specialties.
