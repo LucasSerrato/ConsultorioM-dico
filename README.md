@@ -150,20 +150,21 @@ Dados de amostra: Podem ser inicializados usando data.sql ou CommandLineRunner.
 
 ✅ Notificações por e-mail/SMS para consultas.
 
+
+✅ Cadastro de médicos e pacientes
+✅ Agendamento de consultas com médico, data, hora e especialidade
+✅ Integração total entre front-end e back-end
+
+
+✅ Autenticação e autorização (JWT/Spring Security)
+✅ Histórico médico e relatórios em PDF
+✅ Notificações e integração real com banco de dados
+
 ## ▶️ Como executar o projeto localmente
 1. Clonar o repositório
 2. Executar o back-end: ./mvnw spring-boot:run
 3. Executar o front-end: npm install && ng serve
 
-## 🚀 Melhorias futuras
-- Cadastro de médicos e pacientes
-- Agendamento de consultas com médico, data, hora e especialidade
-- Integração total entre front-end e back-end
-
-## 🚀 Possibilidades de expansão
-- Autenticação e autorização (JWT/Spring Security)
-- Histórico médico e relatórios em PDF
-- Notificações e integração real com banco de dados
 
 ## 🤝 Contribuições
 Lucas Serrato
