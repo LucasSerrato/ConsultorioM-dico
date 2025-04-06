@@ -85,6 +85,10 @@ Donate via Pix: https://livepix.gg/lkshow
 This project demonstrates the integration of Java, Spring Boot, Angular, and TypeScript to build a scalable and complete full-stack web application.
 
 ---
+---
+---
+
+
 
 
 ## 🏥 Consultório Médico – Sistema de Agendamento de Consultas Médicas
