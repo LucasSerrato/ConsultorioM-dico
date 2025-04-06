@@ -62,9 +62,6 @@ Sample data: Can be initialized using data.sql or CommandLineRunner.
 - Doctor and Patient registration
 - Appointment scheduling with doctor, date, time, and specialty
 - Full integration between front-end and back-end
----
-
-## 🚀 Possibilities for Expansion
 - Authentication and Authorization (JWT/Spring Security)
 - Medical history and PDF reports
 - Notifications and real database integration
