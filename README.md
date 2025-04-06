@@ -1,170 +1,123 @@
-# 🏥 **Consultório Médico – Medical Appointment Scheduling System**
+# 🏥 Consultório Médico – Medical Appointment Scheduling System
+Consultório Médico is a modern full-stack web application that streamlines the process of scheduling medical appointments. Built with Java, Spring Boot, H2 Database, Angular, and TypeScript, it allows patients to easily book consultations, while doctors and administrators manage availability and records.
 
-**Consultório Médico** is a full-stack web application designed to facilitate the scheduling of medical appointments. Developed using **Java**, **JavaScript**, **TypeScript**, **Spring Boot**, and **H2 Database**, the system allows patients to book consultations by selecting available doctors, specifying dates and times, and choosing medical specialties.
+🧠 Project Overview
+This system is designed to digitize and optimize clinic appointment workflows. It provides:
 
----
+✅ Doctor Management: Add, edit, and view registered doctors, including their specialties.
 
-## 🧠 **Project Overview**
+✅ Patient Management: Register and manage patients and their medical information.
 
-The system streamlines the appointment scheduling process by providing functionalities such as:
+✅ Appointment Scheduling: Book consultations with available doctors by date and specialty.
 
-- **Doctor Management:** Register and manage doctor information, including specialties.
-- **Patient Management:** Register and manage patient details.
-- **Appointment Scheduling:** Book consultations by selecting a doctor, date, and time.
-- **Specialty Filtering:** Filter doctors based on medical specialties.
-- **Data Persistence:** Store information using an in-memory H2 database during development.
+✅ Specialty Filtering: Easily find doctors by their medical specialty.
 
----
+✅ Data Persistence: Utilizes an in-memory H2 database during development, simulating real-world database interactions.
 
-## 🛠️ **Technologies and Architecture**
+🛠️ Technologies and Architecture
+🔹 Back-End: Java & Spring Boot
+Java 17+: Core programming language for the back-end logic.
 
-### 🔹 Back-End: Java and Spring Boot
+Spring Boot: Simplifies the creation of REST APIs and microservices.
 
-- **Java:** The core programming language used for back-end development.
-- **Spring Boot:** A framework that simplifies the creation of RESTful APIs and web applications.
-- **Spring MVC:** Facilitates the implementation of the Model-View-Controller architecture.
-- **Spring Data JPA:** Simplifies data access and ORM (Object-Relational Mapping) with Java Persistence API.
-- **H2 Database:** An in-memory database used for development and testing purposes.
+Spring MVC: Implements the Model-View-Controller pattern to separate logic cleanly.
 
-### 🔹 Front-End: Angular and TypeScript
+Spring Data JPA: Simplifies database access and object-relational mapping (ORM).
 
-- **Angular:** A platform for building single-page client applications using HTML and TypeScript.
-- **TypeScript:** A superset of JavaScript that adds static types, enhancing code quality and maintainability.
-- **Angular Components:** Modular building blocks for the user interface, promoting reusability and organization.
+H2 Database: Lightweight, in-memory database for fast testing and development.
 
----
+🔹 Front-End: Angular & TypeScript
+Angular 15+: Framework for building single-page applications with modular components.
 
-📂 Project Structure
-The repository is organized into distinct directories for back-end and front-end components:
+TypeScript: Provides type safety and structure to JavaScript code.
 
-Back-End:
+RxJS: Handles asynchronous data streams.
 
-BackendApplication.java: Main class to run the Spring Boot application.
+Bootstrap/CSS: For a responsive and clean UI design.
 
-Medico.java, Paciente.java, Agendamento.java: Entity classes representing doctors, patients, and appointments.
-
-MedicoController.java, PacienteController.java, AgendamentoController.java: Controllers handling HTTP requests related to doctors, patients, and appointments.
-
-MedicoRepository.java, PacienteRepository.java, AgendamentoRepository.java: Repository interfaces for database operations.
-
-Front-End:
-
-app.module.ts: Main module defining the Angular application.
-
-app.component.ts, app.component.html, app.component.css: Root component of the application.
-
-agendamento-consulta.component.ts, agendamento-consulta.component.html, agendamento-consulta.component.css: Component for scheduling consultations.
-
-agendamento.service.ts: Service handling API calls related to appointment scheduling.
-
-
-## ▶️ **How to Run the Project Locally**
-
-### 1. Clone the Repository
-
-```bash
+📁 Project Structure
+bash
+Copiar
+Editar
+Consultorio-Medico/
+│
+├── backend/
+│   ├── src/main/java/com/consultorio/
+│   │   ├── ConsultorioApplication.java          # Entry point of the Spring Boot app
+│   │   ├── controller/
+│   │   │   ├── MedicoController.java            # Doctor-related endpoints
+│   │   │   ├── PacienteController.java          # Patient-related endpoints
+│   │   │   └── AgendamentoController.java       # Appointment-related endpoints
+│   │   ├── model/
+│   │   │   ├── Medico.java                      # Doctor entity
+│   │   │   ├── Paciente.java                    # Patient entity
+│   │   │   └── Agendamento.java                 # Appointment entity
+│   │   └── repository/
+│   │       ├── MedicoRepository.java
+│   │       ├── PacienteRepository.java
+│   │       └── AgendamentoRepository.java
+│
+└── frontend/
+    ├── src/app/
+    │   ├── app.module.ts                        # Angular root module
+    │   ├── app.component.ts/html/css            # Main app component
+    │   ├── agendamento-consulta/
+    │   │   ├── agendamento-consulta.component.ts/html/css
+    │   │   └── agendamento.service.ts           # Service for API communication
+▶️ How to Run the Project Locally
+1. Clone the Repository
+bash
+Copiar
+Editar
 git clone https://github.com/LucasSerrato/ConsultorioM-dico.git
 cd ConsultorioM-dico
-```
-
-### 2. Run the Back-End
-
-Navigate to the back-end directory and start the Spring Boot application:
-
-```bash
+2. Run the Back-End
+bash
+Copiar
+Editar
 cd backend
 ./mvnw spring-boot:run
-```
+✅ Access the back-end API at: http://localhost:8080
 
-The back-end API will be available at `http://localhost:8080`.
-
-### 3. Run the Front-End
-
-Navigate to the front-end directory, install dependencies, and start the Angular application:
-
-```bash
+3. Run the Front-End
+bash
+Copiar
+Editar
 cd frontend
 npm install
 ng serve
-```
+✅ Access the front-end at: http://localhost:4200
 
-The front-end application will be available at `http://localhost:4200`.
+🔐 Security & Validation
+DTOs: Data Transfer Objects used to decouple data sent to and from the API.
 
----
+Validation: Backend uses @Valid annotations to ensure input correctness.
 
-## 🤝 **Contributions**
+CORS Configured: Enables front-end and back-end communication during development.
 
-Contributions are welcome! Feel free to fork the project, open issues, or submit pull requests with enhancements and fixes.
+🧪 Testing & Database
+H2 Console: Available at http://localhost:8080/h2-console for quick DB inspections.
 
----
+Sample data: Can be initialized using data.sql or CommandLineRunner.
 
-## 📧 **Contact**
+🚀 Future Improvements
+✅ Authentication and role-based access (Admin / Doctor / Patient).
 
-**Lucas Serrato**  
-[LinkedIn](https://www.linkedin.com/in/lucasserrato201)  
-📩 alfalifeclothes@gmail.com  
-☕ [Donate via Pix](https://livepix.gg/lkshow)
+✅ Pagination and search for doctor listings.
 
----
+✅ Switchable production database (e.g., PostgreSQL).
 
-## 🎓 **Academic Note**
+✅ Email/SMS notifications for appointments.
 
-This project exemplifies the integration of **Java**, **Spring Boot**, **Angular**, and **TypeScript** in developing a full-stack web application. It serves as a practical demonstration of building a system with a clear separation of concerns, utilizing modern frameworks and technologies.
+🤝 Contributions
+Contributions are welcome and encouraged! Open an issue, suggest a feature, or submit a PR. All help is appreciated!
 
----
+📧 Contact
+Lucas Serrato
+🔗 LinkedIn
+📩 alfalifeclothes@gmail.com
+☕ Donate via Pix
 
----
-
-# 🏥 **Consultório Médico – Sistema de Agendamento de Consultas Médicas**
-
-**Consultório Médico** é uma aplicação web full-stack desenvolvida para facilitar o agendamento de consultas médicas. Utilizando **Java**, **JavaScript**, **TypeScript**, **Spring Boot** e **H2 Database**, o sistema permite que pacientes agendem consultas selecionando médicos disponíveis, especificando datas e horários, e escolhendo especialidades médicas.
-
----
-
-## 🧠 **Visão Geral do Projeto**
-
-O sistema otimiza o processo de agendamento de consultas, oferecendo funcionalidades como:
-
-- **Gerenciamento de Médicos:** Cadastro e administração de informações dos médicos, incluindo especialidades.
-- **Gerenciamento de Pacientes:** Cadastro e administração de detalhes dos pacientes.
-- **Agendamento de Consultas:** Marcação de consultas selecionando médico, data e horário.
-- **Filtragem por Especialidade:** Filtrar médicos com base em suas especialidades médicas.
-- **Persistência de Dados:** Armazenamento de informações utilizando o banco de dados em memória H2 durante o desenvolvimento.
-
----
-
-## 🛠️ **Tecnologias e Arquitetura**
-
-### 🔹 Back-End: Java e Spring Boot
-
-- **Java:** Linguagem de programação principal utilizada no desenvolvimento do back-end.
-- **Spring Boot:** Framework que simplifica a criação de APIs RESTful e aplicações web.
-- **Spring MVC:** Facilita a implementação da arquitetura Model-View-Controller.
-- **Spring Data JPA:** Simplifica o acesso a dados e o mapeamento objeto-relacional com a Java Persistence API.
-- **H2 Database:** Banco de dados em memória utilizado para fins de desenvolvimento e testes.
-
-### 🔹 Front-End: Angular e TypeScript
-
-- **Angular:** Plataforma para construção de aplicações cliente de página única utilizando HTML e TypeScript.
-- **TypeScript:** Superset do JavaScript que adiciona tipagem estática, melhorando a qualidade e manutenção do código.
-- **Componentes Angular:** Blocos modulares para a interface do usuário, promovendo reutilização e organização.
-
----
-
-## 📂 **Estrutura do Projeto**
-
-O repositório é organizado em diretórios distintos para componentes de back-end e front-end:
-
-- **Back-End:**
-- `BackendApplication.java`: Classe principal para executar o aplicativo Spring Boot.
-- `Medico.java`, `Paciente.java`, `Agendamento.java`: Classes de entidade que representam médicos, pacientes e consultas.
-- `MedicoController.java`, `PacienteController.java`, `AgendamentoController.java`: Controladores que manipulam solicitações HTTP relacionadas a médicos, pacientes e consultas.
-- `MedicoRepository.java`, `PacienteRepository.java`, `AgendamentoRepository.java`: Interfaces de repositório para operações de banco de dados.
-
-- **Front-End:**
-- `app.module.ts`: Módulo principal que define o aplicativo Angular.
-- `app.component.ts`, `app.component.html`, `app.component.css`: Componente raiz da aplicação.
-- `agendamento-consulta.component.ts`, `agendamento-consulta.component.html`, `agendamento-consulta.component.css`: Componente para agendamento de consultas.
-- `agendamento.service.ts`: Serviço que trata chamadas de API relacionadas ao agendamento de consultas.
-
+🎓 Academic Note
+This project is a great example of integrating Spring Boot (Java) and Angular (TypeScript) into a complete full-stack web application. It demonstrates core backend concepts like REST API development, DTOs, and in-memory databases, along with frontend modular architecture, services, and HTTP communication—all aligned with modern software engineering practices.
 ---
