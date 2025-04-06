@@ -60,28 +60,28 @@ Sample data: Can be initialized using data.sql or CommandLineRunner.
 
 
 
-## How to Run the Project Locally
+## ▶️ How to Run the Project Locally
 1. Clone the Repository
 2. Run Back-End: ./mvnw spring-boot:run
 3. Run Front-End: npm install && ng serve
 
-## Implemented Features
+## 🚀 Future Improvements
 - Doctor and Patient registration
 - Appointment scheduling with doctor, date, time, and specialty
 - Full integration between front-end and back-end
 
-## Possibilities for Expansion
+## 🚀 Possibilities for Expansion
 - Authentication and Authorization (JWT/Spring Security)
 - Medical history and PDF reports
 - Notifications and real database integration
 
-## Contact
+## 🤝 Contributions
 Lucas Serrato
 LinkedIn: https://www.linkedin.com/in/lucasserrato201
 Email: alfalifeclothes@gmail.com
 Donate via Pix: https://livepix.gg/lkshow
 
-## Academic Note
+## 🎓 Academic Note
 This project demonstrates the integration of Java, Spring Boot, Angular, and TypeScript to build a scalable and complete full-stack web application.
 
 ---
