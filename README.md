@@ -13,25 +13,25 @@ Consultório Médico is a full-stack web application designed to facilitate the 
 ## Technologies and Architecture
 🔹Back-End: Java, Spring Boot, Spring MVC, Spring Data JPA, H2 Database
 
- Java 17+: Core programming language for the back-end logic.
+- ✅ Java 17+: Core programming language for the back-end logic.
 
-Spring Boot: Simplifies the creation of REST APIs and microservices.
+- ✅ Spring Boot: Simplifies the creation of REST APIs and microservices.
 
-Spring MVC: Implements the Model-View-Controller pattern to separate logic cleanly.
+- ✅ Spring MVC: Implements the Model-View-Controller pattern to separate logic cleanly.
 
-Spring Data JPA: Simplifies database access and object-relational mapping (ORM).
+- ✅ Spring Data JPA: Simplifies database access and object-relational mapping (ORM).
 
-H2 Database: Lightweight, in-memory database for fast testing and development.
+- ✅ H2 Database: Lightweight, in-memory database for fast testing and development.
 
 ## 🔹Front-End: Angular, TypeScript
 
-Angular 15+: Framework for building single-page applications with modular components.
+- ✅ Angular 15+: Framework for building single-page applications with modular components.
 
-TypeScript: Provides type safety and structure to JavaScript code.
+- ✅ TypeScript: Provides type safety and structure to JavaScript code.
 
-RxJS: Handles asynchronous data streams.
+- ✅ RxJS: Handles asynchronous data streams.
 
-Bootstrap/CSS: For a responsive and clean UI design.
+- ✅ Bootstrap/CSS: For a responsive and clean UI design.
 
 
 Consultorio-Medico/
